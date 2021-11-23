@@ -28,7 +28,7 @@ public class Cliente extends Pessoa {
 
     @Override
     public String toString() {
-        return "Cliente \t nome= " + nome + "\t CPF= "+ cpf + "\t email= "+email;
+        return "Cliente \n nome= " + nome + "\n CPF= "+ cpf + "\n email= "+email;
     }
 
     
