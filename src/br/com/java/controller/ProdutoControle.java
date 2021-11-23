@@ -43,4 +43,17 @@ public class ProdutoControle implements IController<Produto> {
         return produtos;
     }
     
+    public boolean validaProduto(String item, int quantidade) {
+        ArrayList<Produto> produtos = new ArrayList<>();
+
+        for(Produto produto : produtos) {
+
+            if (item.equalsIgnoreCase(produto.getNomeProduto())) {
+                if (quantidade <= produto.getQuantidade()) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
